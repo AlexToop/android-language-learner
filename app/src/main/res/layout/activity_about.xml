@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.AboutActivity">
+
+    <include
+        android:id="@+id/about_toolbar"
+        layout="@layout/toolbar_main" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/default_margin"
+        android:paddingRight="@dimen/default_margin"
+        android:paddingTop="@dimen/large_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_toolbar">
+
+        <TextView
+            android:id="@+id/aboutBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_body"
+            android:textColor="#000000"/>
+
+        <Button
+            android:id="@+id/aboutDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aboutBody"
+            android:layout_marginTop="@dimen/extra_large_vertical_margin"
+            app:layout_constraintTop_toBottomOf="@+id/aboutBody"
+            app:layout_constraintLeft_toLeftOf="@+id/aboutBody"
+            app:layout_constraintRight_toRightOf="@+id/aboutBody"
+            android:text="@string/generic_exit" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

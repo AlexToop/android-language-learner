@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/nav_general">
+        <menu>
+            <item
+                android:id="@+id/nav_change_language"
+                android:icon="@drawable/ic_round_input_24dp"
+                android:title="@string/nav_change_language" />
+        </menu>
+
+    </item>
+
+    <item android:title="@string/nav_support">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/round_info_black_24dp"
+                android:title="@string/nav_about" />
+        </menu>
+
+    </item>
+
+</menu>

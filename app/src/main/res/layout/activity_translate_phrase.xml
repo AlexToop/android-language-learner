@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2018. Created by Alexander Toop. Assignment for Aberystwyth University.
+  -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    tools:context=".ui.games.TranslatePhraseActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_alignStart="@+id/toolbar"
+            android:paddingLeft="@dimen/default_margin"
+            android:paddingRight="@dimen/default_margin">
+
+            <TextView
+                android:id="@+id/translateDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/default_margin"
+                android:text="@string/game_translate_in_game_desc"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/translateQ1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/translateDesc"
+                android:layout_alignStart="@+id/translateDesc"
+                android:textColor="#000000"
+                android:paddingTop="@dimen/large_margin"
+                android:text="@string/game_translate_placeholder" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/question1Body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/translateQ1"
+                android:imeOptions="flagNoExtractUi"
+                android:layout_alignStart="@+id/translateQ1">
+
+
+                <EditText
+                    android:id="@+id/q1EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:hint="@string/game_translate_hint"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPersonName" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/translateQ2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_below="@+id/question1Body"
+                android:layout_alignStart="@+id/question1Body"
+                android:paddingTop="@dimen/large_margin"
+                android:text="@string/game_translate_placeholder" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/question2Body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="flagNoExtractUi"
+                android:layout_below="@+id/translateQ2"
+                android:layout_alignStart="@+id/translateQ2">
+
+
+                <EditText
+                    android:id="@+id/q2EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:hint="@string/game_translate_hint"
+                    android:inputType="textPersonName" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/translateQ3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_below="@+id/question2Body"
+                android:layout_alignStart="@+id/question2Body"
+                android:paddingTop="@dimen/large_margin"
+                android:text="@string/game_translate_placeholder" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/question3Body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/translateQ3"
+                android:imeOptions="flagNoExtractUi"
+                android:layout_alignStart="@+id/translateQ3">
+
+                <EditText
+                    android:id="@+id/q3EditText"
+                    android:layout_width="match_parent"
+                    android:imeOptions="actionDone"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/game_translate_hint"
+                    android:inputType="textPersonName" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/game_translate_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/question3Body"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="@dimen/large_margin"
+                android:text="@string/generic_submit" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

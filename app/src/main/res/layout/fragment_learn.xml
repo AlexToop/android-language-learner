@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.learn.LearnFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        android:layout_marginLeft="@dimen/default_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/translatePhraseGame">
+
+            <View style="@style/Divider"
+                android:id="@+id/div_1"/>
+
+            <TextView
+                android:layout_marginStart="@dimen/default_margin"
+                android:id="@+id/learnGame2name"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="@string/game_translate_title"
+                android:layout_below="@+id/div_1"
+                android:layout_alignStart="@+id/div_1"/>
+
+            <TextView
+                android:id="@+id/learnGame2desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_below="@+id/learnGame2name"
+                android:layout_alignStart="@+id/learnGame2name"
+                android:text="@string/game_translate_desc"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/multipleChoiceGame"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_below="@+id/translatePhraseGame"
+            android:layout_alignStart="@+id/translatePhraseGame">
+
+            <View style="@style/Divider"
+                android:id="@+id/div_2"/>
+
+            <TextView
+                android:layout_marginStart="8dp"
+                android:id="@+id/learnGame1name"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:maxLines="1"
+                android:layout_below="@+id/div_2"
+                android:layout_alignStart="@+id/div_2"
+                android:ellipsize="end"
+                android:text="@string/game_multiple_title" />
+
+            <TextView
+                android:id="@+id/learnGame1desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_below="@+id/learnGame1name"
+                android:layout_alignStart="@+id/learnGame1name"
+                android:text="@string/game_multiple_desc"
+                android:layout_marginBottom="8dp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2018. Created by Alexander Toop. Assignment for Aberystwyth University.
+  -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    tools:context=".ui.games.MultipleChoiceActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_alignStart="@+id/toolbar"
+            android:paddingLeft="@dimen/default_margin"
+            android:paddingRight="@dimen/default_margin">
+
+
+            <TextView
+                android:id="@+id/mcDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/large_margin"
+                android:paddingTop="@dimen/default_margin"
+                android:text="@string/game_multiple_in_game_desc"
+                android:textColor="#000000" />
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/mc_q1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mcDesc"
+                android:layout_alignStart="@+id/mcDesc">
+
+                <View
+                    android:id="@+id/div_1"
+                    style="@style/Divider" />
+
+                <TextView
+                    android:id="@+id/translatedMcTextView_q1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/div_1"
+                    android:layout_alignStart="@+id/div_1"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:text="@string/game_multiple_placeholder"
+                    android:textColor="#000000" />
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/radio_q1_group_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/translatedMcTextView_q1"
+                    android:layout_alignStart="@+id/translatedMcTextView_q1"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:layout_marginBottom="@dimen/default_margin">
+
+                    <RadioButton
+                        android:id="@+id/radio_q1_option1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/game_multiple_placeholder" />
+                    <RadioButton
+                        android:id="@+id/radio_q1_option2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/game_multiple_placeholder" />
+                    <RadioButton
+                        android:id="@+id/radio_q1_option3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/game_multiple_placeholder" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/mc_q2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mc_q1"
+                android:layout_alignStart="@+id/mc_q1">
+
+                <View
+                    android:id="@+id/div_2"
+                    style="@style/Divider" />
+
+                <TextView
+                    android:id="@+id/translatedMcTextView_q2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/div_2"
+                    android:layout_alignStart="@+id/div_2"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:text="@string/game_multiple_placeholder"
+                    android:textColor="#000000" />
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/radio_q2_group_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/translatedMcTextView_q2"
+                    android:layout_alignStart="@+id/translatedMcTextView_q2"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:layout_marginBottom="@dimen/default_margin">
+
+                    <RadioButton
+                        android:id="@+id/radio_q2_option1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/game_multiple_placeholder" />
+                    <RadioButton
+                        android:id="@+id/radio_q2_option2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/game_multiple_placeholder" />
+                    <RadioButton
+                        android:id="@+id/radio_q2_option3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/game_multiple_placeholder" />
+                </RadioGroup>
+            </RelativeLayout>
+
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/mc_q3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mc_q2"
+                android:layout_alignStart="@+id/mc_q2">
+
+                <View
+                    android:id="@+id/div_3"
+                    style="@style/Divider" />
+
+                <TextView
+                    android:id="@+id/translatedMcTextView_q3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/div_3"
+                    android:layout_alignStart="@+id/div_3"
+                    android:layout_marginTop="11dp"
+                    android:text="@string/game_multiple_placeholder"
+                    android:textColor="#000000" />
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/radio_q3_group_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/translatedMcTextView_q3"
+                    android:layout_alignStart="@+id/translatedMcTextView_q3"
+                    android:layout_marginTop="@dimen/default_margin"
+                    android:layout_marginBottom="@dimen/default_margin">
+
+                    <RadioButton
+                        android:id="@+id/radio_q3_option1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/game_multiple_placeholder" />
+                    <RadioButton
+                        android:id="@+id/radio_q3_option2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/game_multiple_placeholder" />
+                    <RadioButton
+                        android:id="@+id/radio_q3_option3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/game_multiple_placeholder" />
+                </RadioGroup>
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/game_mc_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mc_q3"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="@dimen/large_margin"
+                android:text="@string/generic_submit" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>
